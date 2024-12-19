@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "file": "installHook.js",
+  "sources": [
+    "installHook.ts"
+  ],
+  "names": [],
+  "mappings": "AAAA"
+}

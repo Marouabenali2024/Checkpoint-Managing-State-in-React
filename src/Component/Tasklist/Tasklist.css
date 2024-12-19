@@ -1,0 +1,111 @@
+/* Tasks List Container */
+#tasks-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between tasks */
+  margin: 20px auto; /* Centered with auto margin */
+  width: 500px; /* Make it more flexible for smaller screens */
+  padding: 35px;
+  border-radius: 12px; /* Softer corners for a modern look */
+  max-height: 400px; /* Constrain height for overflow handling */
+  overflow-y: auto; /* Smooth scrolling for long lists */
+   position: absolute;
+  top: 300px; /* Distance from the top of the page */
+  right: 180px; /* Distance from the right edge */
+  
+  /* For Webkit browsers like Chrome and Safari */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #333 #f9f9f9; /* Firefox */
+}
+
+/* Custom Scrollbar Styling */
+#tasks-list::-webkit-scrollbar {
+  width: 10px; /* Slightly larger for better usability */
+}
+
+#tasks-list::-webkit-scrollbar-thumb {
+  background-color: #333; /* Darker color for visibility */
+  border-radius: 5px; /* Rounded scrollbar thumb */
+}
+
+#tasks-list::-webkit-scrollbar-track {
+  background-color: #f9f9f9; /* Matches container background */
+}
+
+/* No Tasks Message Container */
+#no-tasks-message {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* Added spacing between elements */
+  color: #555; /* Neutral gray for better readability */
+  padding: 20px; /* Ensure spacing within the container */
+   top: 1px; /* Distance from the top of the page */
+  right: 32px; /* Distance from the right edge */
+}
+#undone-icon {
+    position: absolute;
+  top: 1px; /* Distance from the top of the page */
+  right: 320px; /* Distance from the right edge */
+
+}
+/* Heading for No Tasks */
+#no-tasks-message h1 {
+  font-size: 1.8rem; /* Slightly larger font size */
+  margin: 0;
+  color: #777; /* Subtle color for the heading */
+  font-weight: bold; /* Emphasize heading text */
+    position: absolute;
+  top: 400px; /* Distance from the top of the page */
+  right: 250px; /* Distance from the right edge */
+}
+
+/* Supporting Text for No Tasks */
+#no-tasks-message p {
+  font-size: 1rem;
+  color: #666; /* Accessible contrast for supporting text */
+  margin: 0;
+  line-height: 1.5; /* Better readability */
+    top: 400px; /* Distance from the top of the page */
+  right: 200px; /* Distance from the right edge */
+}
+
+/* Icon Container */
+#no-tasks-message div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px; /* Space between icon and text */
+}
+
+/* Icon Animation */
+#no-tasks-message div svg {
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  color: #888; /* Neutral color for default state */
+    top: 10px; /* Distance from the top of the page */
+  right: 200px; /* Distance from the right edge */
+}
+
+#no-tasks-message div:hover svg {
+  transform: scale(1.2); /* Interactive hover feedback */
+  color: #28a745; /* Bright green for hover state */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #tasks-list {
+    width: 90%; /* Adjust width for smaller screens */
+    max-height: 300px; /* Reduce height to fit smaller viewports */
+  }
+
+  #no-tasks-message h1 {
+    font-size: 1.5rem; /* Adjust heading size for smaller screens */
+  }
+
+  #no-tasks-message p {
+    font-size: 0.9rem; /* Scale down supporting text */
+  }
+}

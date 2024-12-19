@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "types": ["node", "vite/client"],
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  }
+}

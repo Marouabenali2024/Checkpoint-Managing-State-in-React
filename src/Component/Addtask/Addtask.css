@@ -1,0 +1,63 @@
+/* General Styles */
+input {
+  all: unset;
+  border-bottom: 2px solid rgb(211, 211, 247); /* Slightly thicker for better visibility */
+  margin: 0;
+  padding: 10px 15px;
+  width: 370px;; /* Prevent overflow */
+  font-size: 16px; /* Ensure readable text */
+  color: #333; /* Improved text color for better contrast */
+}
+
+input::placeholder {
+  font-style: italic;
+  color: rgb(180, 180, 240); /* Slightly darker for better readability */
+}
+
+/* Button Styles */
+button {
+  all: unset;
+  background-color: rgb(5, 198, 169); /* Initial green color */
+  margin: 0;
+  padding: 10px 15px;
+  width: auto; /* Automatically adjust to content */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: green; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge the button */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* More pronounced shadow on hover */
+}
+
+button:active {
+  transform: scale(0.95); /* Button pressed effect */
+  background-color: greenyellow; /* Even darker green when clicked */
+}
+
+/* Add Task Block */
+#add-task-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px; /* Prevent overflow */
+  margin: 20px; /* Space around the block */
+  padding: 10px;
+  gap: 10px; /* Add spacing between elements */
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #fff; /* Subtle white background for contrast */
+  
+  /* Positioning the block to the right */
+  position: absolute;
+  top: 250px; /* Distance from the top of the page */
+  right: 220px; /* Distance from the right edge */
+}
+
